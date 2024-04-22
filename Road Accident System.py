@@ -169,7 +169,7 @@ class MapsFrame(tk.Frame):
 
     def create_maps_url(self, accident_reports):
         # Google Maps base URL
-        base_url = "https://www.google.com/maps/embed/v1/place?key=AIzaSyAuY9YLyOrlWwpJFvffVK7jZchRFIP_6PI"
+        base_url = "https://www.google.com/maps/embed/v1/place?key=YOUR API KEY"
 
         # Construct the 'q' parameter with the locations of accidents
         locations = "|".join(report["location"].replace(" ", "+") for report in accident_reports)
